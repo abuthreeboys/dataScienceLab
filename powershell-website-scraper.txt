@@ -1,0 +1,8 @@
+***This script can only extract one page at a time, NOT the full website.*** 
+Invoke-WebRequest -Uri "https://www.preventionclinics.com/" -OutFile "index.html/*" -TimeoutSec 60
+
+***This script will extract the full website. wget needs to be edownloaded from https://eternallybored.org/misc/wget/ version 1.20.3 for windows and installed. Path to the 
+installed software will need to be added to the environment variable  ***
+wget --mirror --convert-links --wait=2 https://www.preventionclinics.com/
+
+
